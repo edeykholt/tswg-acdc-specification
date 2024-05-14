@@ -2711,7 +2711,7 @@ The following states and transitions are defined for the Discloser. These state 
 | `Offering` | offer | Prepare and send either a requested offer (referencing disclosee's apply) or unsolicited offer |
 | `Offered` |
 | `Agreed` |
-| `SpruningAgreed` | spurn |
+| `SpurningAgreed` | spurn |
 | `Granting` | grant | Prepare and send either a requested grant (referencing disclosee's agree) or unsolicited grant |
 | `Granted` |
 
@@ -2726,7 +2726,7 @@ The following states and transitions are defined for the Discloser. These state 
 | `Offering` | discloser sent offer | `Offered` ||
 | `Offered` | received spurn from disclosee | (final) |  |
 | `Offered` | received agree from disclosee | `Agreed` |  |
-| `Agreed` | discloser spurns | `SpruningAgreed` |  |
+| `Agreed` | discloser spurns | `SpurningAgreed` |  |
 | `Agreed` | discloser decides to grant | `Granting` |  |
 | `Granting` | (auto transition) | `Granted` |  |
 | `Granted` | received admit from disclosee | (final) | |
